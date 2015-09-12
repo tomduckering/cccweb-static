@@ -1,0 +1,87 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/font-face";
+
+//Phones
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) { 
+
+  div#container {
+    width:100%;
+  }
+  
+  div#title {
+    width:200px;
+    float:left;
+    padding-top:7px;
+  }
+}
+
+//Tablets?
+
+//Desktop
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  div#container {
+    padding-top:40px;
+    width: 800px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  div#title {
+    width:700px;
+    float:left;
+    padding-top:7px;
+  }
+}
+
+
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+h1 {
+  font-size: 3.4em;
+  font-weight: 900;
+  text-transform:uppercase;
+  letter-spacing: -0.1em;
+}
+
+
+
+div#header {
+  margin-bottom: 40px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: "Open Sans"
+}
+
+p {
+  padding-bottom:1.5em;
+}
+
+ul {
+  padding-bottom:1.5em;
+}
+
+li {
+  padding-bottom:0.5em;
+  padding-left:2.5em;
+}
