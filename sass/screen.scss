@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import "compass/css3/font-face";
+@import "compass/css3";
 
 //Phones
 @media only screen 
@@ -54,23 +55,29 @@ font-weight: 300;
 src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: "Open Sans";
+  
+  background-color: #F7F7F7;
+  color: #696969;
+}
+
+div#header {
+  margin-bottom: 40px;
+}
+
 h1 {
+  color: #404040;
   font-size: 3.4em;
   font-weight: 900;
   text-transform:uppercase;
   letter-spacing: -0.1em;
 }
 
-
-
-div#header {
-  margin-bottom: 40px;
-}
-
-body {
-  font-size: 100%;
-  line-height: 1.5em;
-  font-family: "Open Sans"
+.churchname {
+  font-weight:bold;
 }
 
 p {
